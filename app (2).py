@@ -8,8 +8,8 @@ import numpy as np
 # CONFIGURACIÓN
 # =======================
 
-GOOGLE_API_KEY = st.secrets["app"]["GOOGLE_API_KEY"]
-MONGODB_URI = st.secrets["app"]["MONGODB_URI"]
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+MONGODB_URI = st.secrets["MONGODB_URI"]
 
 if not GOOGLE_API_KEY or not MONGODB_URI:
     st.error("❌ Faltan las variables de entorno GOOGLE_API_KEY o MONGODB_URI")
